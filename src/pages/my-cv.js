@@ -1,0 +1,21 @@
+import Head from "next/head";
+import { useRouter } from "next/router";
+import React, { Fragment, useEffect, useState } from "react";
+import { data } from "../../data/Seo";
+import CVParent from "../../components/my-cv";
+
+
+export default function MyCVData() {
+  const Router = useRouter();
+
+  return (
+    <>
+      <Head>
+        <title>{data.myapps.title}</title>
+        <meta name="description" content={data.myapps.description} />
+        <meta name="keywords" content={data.myapps.keyword} />
+      </Head>
+      <CVParent />
+    </>
+  );
+}

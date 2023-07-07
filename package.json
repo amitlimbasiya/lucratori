@@ -1,0 +1,35 @@
+{
+  "name": "lucratori",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@types/node": "18.16.1",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.1",
+    "bootstrap": "^5.3.0-alpha3",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.1",
+    "jquery": "^3.7.0",
+    "next": "13.3.1",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-custom-scroll": "^5.0.0",
+    "react-dom": "18.2.0",
+    "react-responsive-tabs-tmp": "^1.1.3",
+    "react-router-dom": "^6.11.1",
+    "styled-components": "^5.3.10",
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3"
+  }
+}

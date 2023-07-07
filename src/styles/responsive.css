@@ -1,0 +1,219 @@
+@media (min-width: 1399px){
+    .container{
+        max-width: 1164px;
+    }
+}
+@media (max-width: 1366px){
+    .container{
+        max-width: 95%;
+    }    
+    .compnayOrderHistory .RRT__panel {
+      padding: 50px;
+    }
+    .compnayOrderHistory .RRT__panel .container{
+      max-width: 100%;
+    }
+}
+@media (max-width: 1199px){
+  .invoiceHistoryDataTbl .table td.invoiceNumber {
+      width: 280px;
+  }
+  .invoiceHistoryDataTbl .table td.invoiceDownload {
+    width: 185px;
+  }
+}
+@media (max-width: 991px){
+    .container{
+        max-width: 100%;
+    }
+    .RRT__panel {
+        padding: 50px;
+    }
+    .changeCoverPhotoSection{
+      height: 300px;
+    }
+}
+@media (max-width: 991px){
+    .RRT__panel {
+        padding: 30px;
+    }
+    .RRT__accordion .RRT__panel {
+        margin-bottom: 15px;
+    }
+    .jobAnnouncementDataTbl table.table th,
+    .jobAnnouncementDataTbl table td{
+      line-height: var(--bs-body-line-height);
+      padding: 10px 15px;
+    }
+    .feelbleControl {
+      margin-bottom: 25px;
+    }
+    .cardBody .RRT__accordion .RRT__panel {
+        margin-bottom: 0px;
+    }
+    .compnay-sort-info{
+        margin-left: 20px;
+    }
+    .compnayHeader nav{
+        justify-content: flex-start;
+    }
+    .compnayHeader .navbar-toggler{
+        position: absolute;
+        right: 12px;
+        border: none;
+        padding: 0;
+    }
+    .compnayHeader .navbar-toggler .navbar-toggler-icon{
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    .compnayHeader .navbar-toggler:focus,
+    .compnayHeader .navbar-toggler:hover{
+      outline: none;
+      box-shadow: none;
+    }
+    .compnayProfile {
+      width: 62px;
+      height: 62px;
+    }
+    .compnay-sort-info a {
+      font-size: 20px;
+    }
+    .compnay-sort-info span{
+        margin-top: 5px;
+    }
+    .compnay-sort-info {
+      margin-left: 10px;
+    }
+    .compnayAboutInfo,
+    .compnayJobsListing {
+      padding: 50px 0;
+    }
+    .compnayShare .container{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .compnayShare h2,
+    .companyContact h2{
+        margin-bottom: 30px;
+    }
+    .companyContact {
+      padding-top: 50px;
+    }
+    .companyContact iframe{
+      margin-top: 50px;
+    }
+    .companyEditProfile {
+      padding: 50px 0px;
+    }
+    .compnayOrderHistory .RRT__panel {
+      padding: 15px 0;
+  }
+}
+@media(max-width:767px){
+  .changeCoverPhotoSection{
+    height: 250px;
+  }
+  .compnayMenu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 22px);
+    background: #030f21;
+    width: 100%;
+  }
+  .compnayHeader nav{
+      padding: 0 12px;
+  }
+  .compnayHeader .navbar-nav .nav-link {
+    color: #cccaca;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    padding: 15px 25px;
+    margin: 0;
+    border-top: 1px solid #cccaca;
+  }
+  .compnayOrderHistory .RRT__tabs.RRT__accordion {
+      display: block;
+  }
+  .compnayOrderHistory .RRT__tabs.RRT__accordion .RRT__tab{
+      width: 100%;
+  }
+  tbody, td, tfoot, th, thead, tr{
+      white-space: nowrap;
+  }
+  .custom-checkbox-Row, .custom-radiobox-Row {
+    padding: 15px;
+  }
+  .simpleRadio .customRadio {
+    margin: 0 10px;
+  }
+}
+@media(max-width:576px){
+  .redBtn{
+    padding: 10px 15px;
+  }
+  .jobsListingPart ul li .jobCardContent{
+    padding: 0 0 20px 0px;
+  }
+  .jobsListingPart ul li .jobCompanyLogo{
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .jobsListingPart ul li .jobCardActions{
+    padding: 0px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .dymamicPart .refLinks{
+    display: block;
+  }
+  .dymamicPart Form .col{
+    flex: unset;
+  }
+  .inlineDataPart{
+    gap: 10px;
+  }
+  .customModal .madalHeading{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .customRadio{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .eRadioCircle{
+    width: 20px;
+    height: 20px;
+  }
+  .RRT__panel {
+    padding: 15px;
+  }
+  .feelbleControl label.form-label{
+    font-size: 16px;
+  }
+  .changeCoverPhotoSection {
+    height: 200px;
+  }
+  .compnayHeader .navbar-nav .nav-link{
+    font-size: 16px;
+  }
+  .compnayAboutInfo, .compnayJobsListing {
+    padding: 40px 0;
+  }
+  .compnayAboutInfo h2{
+      margin-bottom: 25px;
+  }
+  .compnayShare .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .companyContact {
+    padding-top: 40px;
+  }
+  .companyContact iframe{
+    margin-top: 40px;
+  }
+  .simpleRadio .customRadio {
+    margin: 0 10px 0 0px;
+  }
+}
