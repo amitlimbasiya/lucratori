@@ -146,4 +146,9 @@ export const data = {
     keyword:
       "",
   },
+  JobsDetails: {
+    title: "Jobs Details",
+    description: "",
+    keyword: "",
+  },
 };

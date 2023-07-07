@@ -10,6 +10,7 @@ const router = {
     REGISTERASWORKER: "/register-as-worker",
     REGISTERASCOMPANY: "/register-as-company",
     JOBS: "/jobs",
+    JOBSDETAILS: 'job-details',
     MYAPPS: "/my-apps",
     MYCV: "/my-cv",
     EMPLOYERJOBSLIST: "/employer-jobs-list",
