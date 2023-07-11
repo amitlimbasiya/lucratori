@@ -104,6 +104,24 @@ export const Header = styled.div`
         background: var(--white) url(/images/logo-icon-shape.svg) no-repeat bottom right;
         background-size: 32%;
         border-top: 1px solid var(--chinese-white);
+
+        ${mediaQueries("tabletPortrait")`  
+            right: 0px;
+            max-width: 100%;
+        `}
+        ${mediaQueries("md")`  
+            padding: 10px 12px;
+        `}
+    }
+    .userDataShow .row {
+        ${mediaQueries("md")`  
+            gap:15px
+        `}
+    }
+    .userDataShow .col {
+        ${mediaQueries("md")`  
+            flex: unset;
+        `}
     }
     .userDataShow .columnData h2 {
         margin: 0px 0px 15px 0px;
@@ -112,6 +130,11 @@ export const Header = styled.div`
         color:var(--dark-blue);
         font-size: 20px;
         font-weight: 600;
+
+        ${mediaQueries("md")`  
+            margin: 0px 0px 10px 0px;
+            font-size: 18px;
+        `}
     }
     .userDataShow .columnData ul {
         margin: 0px;

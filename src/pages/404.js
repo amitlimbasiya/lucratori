@@ -9,7 +9,7 @@ const Custom404 = () => {
                 <Container>
                     <Row className="align-items-center justify-content-center">
                         <Col className="text-center">
-                            <h1>404 - Page Not Found</h1>
+                            <h1><strong>404</strong> Not Found</h1>
                             <Link className="redBtn" href="">Go Back</Link>
                         </Col>
                     </Row>

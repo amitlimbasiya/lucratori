@@ -15,7 +15,7 @@ export default function JobDetailsfan() {
         <meta name="description" content={data.JobsDetails.description} />
         <meta name="keywords" content={data.JobsDetails.keyword} />
       </Head>
-      <JobsDetails/>
+      <JobsDetails />
     </>
   );
 }

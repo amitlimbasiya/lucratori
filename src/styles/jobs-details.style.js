@@ -4,16 +4,22 @@ import styled, { css } from "styled-components";
 export const JobsDetailsParent = styled.div`
     &.JobsDetailsParent{
         background:#eae8e8;
-        padding:40px 0px;
+        padding:0px 0px 50px;
         border-top: 120px solid #030f21;
+
+        .container{
+            position: relative;
+            top: -70px;
+            margin-bottom: -70px;;
+        }
     }
 
     .jobdetails-criteria,
     .jobdetails-logobox{
         background-color: #fff;
-        border-radius: 10px;
+        border-radius: 6px;
         text-align: center;
-        padding: 20px 30px;
+        padding: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -69,7 +75,7 @@ export const JobsDetailsParent = styled.div`
     .jobdetails-contentbar{
         background-color: #fff;
         border-radius: 10px;
-        padding: 30px;
+        padding: 25px;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
     }
     
@@ -79,7 +85,6 @@ export const JobsDetailsParent = styled.div`
         border-bottom: 2px solid #e2e2e2;
         padding-bottom: 20px;
         margin-bottom: 30px;
-        padding-top: 20px;
 
         ${mediaQueries("sm")`  
             display: block;
@@ -107,8 +112,8 @@ export const JobsDetailsParent = styled.div`
     .jobdetails-title-left span{
         font-size: 16px;
     }
-    .jobdetails-inner-box{
-        margin-bottom: 60px;
+    .jobdetails-inner-box:not(:last-child){
+        margin-bottom: 30px;
     }
 
     .jobsListingPart{

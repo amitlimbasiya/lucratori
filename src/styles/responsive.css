@@ -216,4 +216,10 @@
   .simpleRadio .customRadio {
     margin: 0 10px 0 0px;
   }
+  .contant404 {
+    padding: 150px 0;
+  }
+  .contant404 h1 strong {
+    font-size: 100px;
+  }
 }

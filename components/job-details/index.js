@@ -24,7 +24,7 @@ const JobsDetails = () => {
             <s.JobsDetailsParent className="JobsDetailsParent">
                 <Container>
                     <Row>
-                        <Col xl={3} lg={3}>
+                        <Col lg={3} md={4}>
                             <div className="jobdetails-sidebar">
                                 <div className="jobdetails-logobox">
                                     <Image src={CompanyIcon} alt="CompanyLogo" width="42" height="42" />
@@ -108,7 +108,7 @@ const JobsDetails = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col xl={9} lg={9}>
+                        <Col lg={9} md={8}>
                             <div className="jobdetails-contentbar">
                                 <div className="jobdetails-title-block">
                                     <div className="jobdetails-title-left">

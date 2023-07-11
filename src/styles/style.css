@@ -1242,6 +1242,17 @@ input.form-control:focus,
     padding: 15px;
 }
 .contant404{
-    min-height: 100vh;
+    padding: 300px 0;
     background: var(--platinum);
+}
+.contant404 h1{
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--dark-blue);
+    margin: 0px 0px 20px 0px;
+}
+.contant404 h1 strong {
+    display: block;
+    font-size: 150px;
+    letter-spacing: 10px;
 }
