@@ -3,9 +3,9 @@ import styled, { css } from "styled-components";
 
 export const JobsDetailsParent = styled.div`
     &.JobsDetailsParent{
-        background:#eae8e8;
+        background:var(--platinum);
         padding:0px 0px 50px;
-        border-top: 120px solid #030f21;
+        border-top: 120px solid var(--dark-blue);
 
         .container{
             position: relative;
@@ -16,7 +16,7 @@ export const JobsDetailsParent = styled.div`
 
     .jobdetails-criteria,
     .jobdetails-logobox{
-        background-color: #fff;
+        background-color: var(--white);
         border-radius: 6px;
         text-align: center;
         padding: 15px;
@@ -51,14 +51,15 @@ export const JobsDetailsParent = styled.div`
         margin-bottom: 15px;
     }
     .jd-criteria-box{
-        display: flex;
         width: 100%;
         align-items: center;
         margin-bottom: 15px;
+        display: grid;
+        grid-template-columns: 30px auto;
+        grid-column-gap: 10px;
     }
     .jd-criteria-info {
         width: 100%;
-        padding-left: 10px;
     }
     .jd-criteria-info p{
         font-weight:700;
@@ -67,16 +68,51 @@ export const JobsDetailsParent = styled.div`
     }
     .jd-criteria-info span{
         display: block;
-        color: #7c7c7c;
+        color: var(--gray);
         font-size: 15px;
     }
+    .jobdetails-criteria ul{
+        width: 100%;
+        display: block;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .jobdetails-criteria ul li{
+        list-style: none;
+        margin: 0px 0px 15px 0px;
+        padding: 0px;
+    }
+    .jobdetails-criteria ul li a img{
+        max-width: 16px;
+        max-height: 18px;
+        width: auto;
+        height: auto;
+        transition: 0.3s ease;
+    }
+    .jobdetails-criteria ul li a{
+        display: grid;
+        grid-template-columns:30px auto;
+        grid-column-gap: 10px;
+        align-items: center;
 
-
+        &:hover{
+            color: var(--red);
+        }
+        &:hover img{
+            transform: scale(1.3);
+        }
+    }
+    
     .jobdetails-contentbar{
-        background-color: #fff;
+        background-color: var(--white);
         border-radius: 10px;
         padding: 25px;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+
+        ${mediaQueries("md")`  
+            padding: 20px;
+        `}
     }
     
     .jobdetails-title-block {
@@ -99,12 +135,16 @@ export const JobsDetailsParent = styled.div`
     .jobdetails-title-block h1{
         font-size: 30px;
         font-weight: 600;
-        color: #030f21;
+        color: var(--dark-blue);
+
+        ${mediaQueries("md")`  
+            font-size: 22px;
+        `}
     }
 
     .listing-block p,
     .jobdetails-title-left p{
-        color: #7c7c7c;
+        color: var(--gray);
         font-weight: 500;
         font-size: 16px;
         margin-bottom: 5px;
@@ -118,10 +158,15 @@ export const JobsDetailsParent = styled.div`
 
     .jobsListingPart{
         margin-top: 70px;
+
+        ${mediaQueries("md")`  
+            margin-top: 50px;
+        `}
+        
     }
     .jobsListingPart h3,
     .jobdetails-inner-box h3{
-        color: #030f21;
+        color: var(--dark-blue);
         font-weight: 600;
         font-size: 18px;
         margin-bottom: 5px;
@@ -135,7 +180,7 @@ export const JobsDetailsParent = styled.div`
         display: flex;
         align-items: center;
         gap: 20px;
-        color: #7c7c7c;
+        color: var(--gray);
         font-size: 16px;
         line-height: 1;
     }
@@ -143,7 +188,7 @@ export const JobsDetailsParent = styled.div`
         display: flex;
         align-items: center;
         gap: 10px;
-        color: #7c7c7c;
+        color: var(--gray);
         font-size: 16px;
         line-height: 1;
     }
@@ -161,13 +206,13 @@ export const JobsDetailsParent = styled.div`
 
     .jobdetails-inner-box p{
         font-size: 16px;
-        color: #7c7c7c;
+        color: var(--gray);
     }
     .listing-block ul {
         padding-left: 15px;
     }
     .listing-block ul li {
-        color: #7c7c7c;
+        color: var(--gray);
         font-weight: 400;
         font-size: 16px;
         margin-bottom: 5px;
@@ -183,28 +228,31 @@ export const JobsDetailsParent = styled.div`
         margin:0px 0px 30px 0px;
         padding:20px;
         list-style:none;
-        background: #fff;
+        background: var(--white);
         border-radius: 20px;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    .jobsListingPart ul li:last-child{
+        margin-bottom:0px;
     }
     .jobsListingPart ul li .jobTopPart .jobHeading{
         font-size: 18px;
         font-weight: 600;
         line-height: 1.4;
         margin-right: 10px;
-        color: #030f21;
+        color: var(--dark-blue);
     }
     .jobsListingPart ul li .jobTopPart .jobHeading:hover{
         color:#ff0000;
     }
     .jobsListingPart ul li .jobTopPart .publishadeDate{
-        color:#7c7c7c;
+        color:var(--gray);
         font-size: 14px;
         font-weight: 400;
         line-height: 1.4;
     }
     .jobsListingPart ul li .companyName{
-        color:#7c7c7c;
+        color:var(--gray);
         font-size: 14px;
         font-weight: 600;
         line-height: 1.4;
@@ -224,7 +272,7 @@ export const JobsDetailsParent = styled.div`
     .jobsListingPart ul li .jobCompanyLogo a {
         width: 40px;
         height: 40px;
-        background: #eae8e8;
+        background: var(--platinum);
         border-radius: 5px;
         text-align: center;
         display: flex;
@@ -248,9 +296,7 @@ export const JobsDetailsParent = styled.div`
         .rightAction{
             margin-top: 20px;
         }
-
         `}
-
     }
 
 `;

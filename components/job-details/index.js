@@ -93,18 +93,26 @@ const JobsDetails = () => {
 
                                 <div className="jobdetails-criteria">
                                     <h3>Job Actions</h3>
-                                    <div className="jd-criteria-box">
-                                        <Image src={BookmarkAltIcon} alt="BookmarkAltIcon" width="15" height="27" />
-                                        <div className="jd-criteria-info"><p>Save</p></div>
-                                    </div>
-                                    <div className="jd-criteria-box">
-                                        <Image src={HideAltIcon} alt="HideAltIcon" width="22" height="28" />
-                                        <div className="jd-criteria-info"><p>Hide</p></div>
-                                    </div>
-                                    <div className="jd-criteria-box">
-                                        <Image src={ShareAltIcon} alt="ShareAltIcon" width="20" height="20" />
-                                        <div className="jd-criteria-info"><p>Share</p></div>
-                                    </div>
+                                    <ul>
+                                        <li>
+                                            <Link href="/">
+                                                <Image src={BookmarkAltIcon} alt="BookmarkAltIcon" />
+                                                <div className="jd-criteria-info"><p>Save</p></div>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/">
+                                                <Image src={HideAltIcon} alt="HideAltIcon" />
+                                                <div className="jd-criteria-info"><p>Hide</p></div>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/">
+                                                <Image src={ShareAltIcon} alt="ShareAltIcon" />
+                                                <div className="jd-criteria-info"><p>Share</p></div>
+                                            </Link>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </Col>
