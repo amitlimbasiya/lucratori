@@ -168,7 +168,7 @@ export const JobsDetailsParent = styled.div`
     }
     .listing-block ul li {
         color: #7c7c7c;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 16px;
         margin-bottom: 5px;
         position: relative;
