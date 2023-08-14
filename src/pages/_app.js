@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }) {
   const noNav = ['/login', '/login-as-worker', '/login-as-company', '/register', '/register-as-worker', '/register-as-company', '/forgot-password-worker', '/reset-password-worker', '/forgot-password-company', '/reset-password-company'];
   return (
     <>
-
       <SSRProvider>
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />

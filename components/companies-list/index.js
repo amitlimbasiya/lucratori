@@ -12,6 +12,32 @@ import Companie6 from "../../public/images/companie-6.jpg";
 import Companie7 from "../../public/images/companie-7.jpg";
 import Companie8 from "../../public/images/companie-8.jpg";
 
+function JobListingFun({
+  companiesHeading,
+  companiesLocation,
+  companiesImage,
+  companiesOpenJobs
+}) {
+  return (
+    <>
+      <Col xl={3} lg={4} sm={6}>
+        <div className="jobItem">
+          <div className="imageBox">
+            {companiesImage}
+          </div>
+          <div className="jobSortInfo">
+            <h3><Link href="#">{companiesHeading}</Link></h3>
+            <span className="location">{companiesLocation}</span>
+            <span className="openJobs">Open Jobs ({companiesOpenJobs})</span>
+          </div>
+        </div>
+
+      </Col>
+    </>
+
+  );
+}
+
 const CompaniesListing = () => {
 
   return (
@@ -27,122 +53,56 @@ const CompaniesListing = () => {
         </Container>
         <Container className="bottomShape">
           <Row>
-            <Col xl={3} lg={4} sm={6}>
-
-              <div className="jobItem">
-                <div className="imageBox">
-                  <Image src={Companie1} alt="Companie" />
-                </div>
-                <div className="jobSortInfo">
-                  <h3><Link href="#">Samsung</Link></h3>
-                  <span className="location">New York</span>
-                  <span className="openJobs">Open Jobs (20)</span>
-                </div>
-              </div>
-
-            </Col>
-            <Col xl={3} lg={4} sm={6}>
-
-              <div className="jobItem">
-                <div className="imageBox">
-                  <Image src={Companie2} alt="Companie 2" />
-                </div>
-                <div className="jobSortInfo">
-                  <h3><Link href="#">IKEA</Link></h3>
-                  <span className="location">CHICAGO</span>
-                  <span className="openJobs">Open Jobs (55)</span>
-                </div>
-              </div>
-
-            </Col>
-            <Col xl={3} lg={4} sm={6}>
-
-              <div className="jobItem">
-                <div className="imageBox">
-                  <Image src={Companie3} alt="Companie 3" />
-                </div>
-                <div className="jobSortInfo">
-                  <h3><Link href="#">Dedman</Link></h3>
-                  <span className="location">Germany</span>
-                  <span className="openJobs">Open Jobs (100)</span>
-                </div>
-              </div>
-
-            </Col>
-            <Col xl={3} lg={4} sm={6}>
-
-              <div className="jobItem">
-                <div className="imageBox">
-                  <Image src={Companie4} alt="Companie 4" />
-                </div>
-                <div className="jobSortInfo">
-                  <h3><Link href="#">HORNBACH</Link></h3>
-                  <span className="location">New York</span>
-                  <span className="openJobs">Open Jobs (28)</span>
-                </div>
-              </div>
-
-            </Col>
-            <Col xl={3} lg={4} sm={6}>
-
-              <div className="jobItem">
-                <div className="imageBox">
-                  <Image src={Companie5} alt="Companie 5" />
-                </div>
-                <div className="jobSortInfo">
-                  <h3><Link href="#">APPLE</Link></h3>
-                  <span className="location">California</span>
-                  <span className="openJobs">Open Jobs (188)</span>
-                </div>
-              </div>
-
-            </Col >
-            <Col xl={3} lg={4} sm={6}>
-
-              <div className="jobItem">
-                <div className="imageBox">
-                  <Image src={Companie6} alt="Companie 6" />
-                </div>
-                <div className="jobSortInfo">
-                  <h3><Link href="#">ASTALDI</Link></h3>
-                  <span className="location">MIAMI</span>
-                  <span className="openJobs">Open Jobs (61)</span>
-                </div>
-              </div>
-
-            </Col >
-            <Col xl={3} lg={4} sm={6}>
-
-              <div className="jobItem">
-                <div className="imageBox">
-                  <Image src={Companie7} alt="Companie 7" />
-                </div>
-                <div className="jobSortInfo">
-                  <h3><Link href="#">DACIA</Link></h3>
-                  <span className="location">London</span>
-                  <span className="openJobs">Open Jobs (38)</span>
-                </div>
-              </div>
-
-            </Col >
-            <Col xl={3} lg={4} sm={6}>
-
-              <div className="jobItem">
-                <div className="imageBox">
-                  <Image src={Companie8} alt="Companie 8" />
-                </div>
-                <div className="jobSortInfo">
-                  <h3><Link href="#">REDBULL</Link></h3>
-                  <span className="location">Paris</span>
-                  <span className="openJobs">Open Jobs (22)</span>
-                </div>
-              </div>
-
-            </Col >
+            <JobListingFun
+              companiesImage={<Image src={Companie1} alt="Companie" />}
+              companiesHeading="Samsung"
+              companiesLocation="New York"
+              companiesOpenJobs="20"
+            />
+            <JobListingFun
+              companiesImage={<Image src={Companie2} alt="Companie 2" />}
+              companiesHeading="IKEA"
+              companiesLocation="CHICAGO"
+              companiesOpenJobs="55"
+            />
+            <JobListingFun
+              companiesImage={<Image src={Companie3} alt="Companie 3" />}
+              companiesHeading="Dedman"
+              companiesLocation="Germany"
+              companiesOpenJobs="105"
+            />
+            <JobListingFun
+              companiesImage={<Image src={Companie4} alt="Companie 4" />}
+              companiesHeading="HORNBACH"
+              companiesLocation="New York"
+              companiesOpenJobs="45"
+            />
+            <JobListingFun
+              companiesImage={<Image src={Companie5} alt="Companie 5" />}
+              companiesHeading="APPLE"
+              companiesLocation="California"
+              companiesOpenJobs="188"
+            />
+            <JobListingFun
+              companiesImage={<Image src={Companie6} alt="Companie 6" />}
+              companiesHeading="ASTALDI"
+              companiesLocation="MIAMI"
+              companiesOpenJobs="61"
+            />
+            <JobListingFun
+              companiesImage={<Image src={Companie7} alt="Companie 7" />}
+              companiesHeading="DACIA"
+              companiesLocation="London"
+              companiesOpenJobs="78"
+            />
+            <JobListingFun
+              companiesImage={<Image src={Companie8} alt="Companie 8" />}
+              companiesHeading="REDBULL"
+              companiesLocation="Paris"
+              companiesOpenJobs="15"
+            />
             <Col sm={12} className="text-center">
-
               <Link href="#" className="redBtn">Browse more companies</Link>
-
             </Col >
           </Row >
         </Container >
